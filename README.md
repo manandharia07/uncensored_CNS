@@ -1,5 +1,8 @@
 # CNS by Team uncensored
-
+Contributers:
+             ♦ [Manan Soni](https://github.com/Manan-Soni)
+             ♦ [Chandraprakash Darji](https://github.com/Chandraprakash-Darji)
+             ♦ [Manan Dharia](https://github.com/manandharia07)  
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
