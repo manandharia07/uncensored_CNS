@@ -48,7 +48,7 @@ const MainSection = () => {
             textColor="rgb(74 222 128)"
           />
           <CardGas
-            title={"Meduim"}
+            title={"Medium"}
             price={gas.result.ProposeGasPrice}
             textColor="rgb(96 165 250)"
           />
