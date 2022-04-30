@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { metaMaskSvg, polygonSvg } from "../../assests/indexImg";
+
+
 const Navbar = () => {
   const [isMenuOpend, setisMenuOpend] = useState(false);
   const navOptions = ["Github", "About Us", "Donate"];
