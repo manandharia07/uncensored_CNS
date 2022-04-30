@@ -6,7 +6,7 @@ const teamData = [
         social: {
             insta: "https://instagram.com/dhrumitpat3l?igshid=YmMyMTA2M2Y=",
             github: "https://github.com/badboy6teen",
-            linkedIn: "",
+            linkedIn: "https://www.linkedin.com/in/dhrumit-patel-27a705237",
             twitter: "https://twitter.com/dhrumitpat3l?t=SXFW0wuaf2IaREdYe0j0_w&s=08"
         }
     },
@@ -18,7 +18,7 @@ const teamData = [
             insta: "https://www.instagram.com/nansomani/",
             github: "https://github.com/Manan-Soni",
             linkedIn: "https://www.linkedin.com/in/manan-soni-2b4495217",
-            twitter: ""
+            twitter: "https://twitter.com/MananSoni01"
         }
     },
     {
