@@ -30,18 +30,18 @@ const AboutUS = () => {
             <h3 className="font-bold text-xl ">{memData.name}</h3>
             <p>{memData.role}</p>
             <p>{memData.data}</p>
-            <div className="flex w-full gap-4 bg-orange-600 text-white text-4xl mt-8 rounded">
+            <div className="flex w-full gap-4 bg-[#6A253E] text-white text-4xl mt-8 rounded">
               <a href={memData.social.insta} className="p-2">
-                <AiOutlineInstagram  />
+                <AiOutlineInstagram />
               </a>
               <a href={memData.social.twitter} className="p-2">
-                <AiOutlineTwitter  />
+                <AiOutlineTwitter />
               </a>
               <a href={memData.social.linkedIn} className="p-2">
-                <AiOutlineLinkedin  />
+                <AiOutlineLinkedin />
               </a>
               <a href={memData.social.github} className="p-2">
-                <AiOutlineGithub  />
+                <AiOutlineGithub />
               </a>
             </div>
           </div>

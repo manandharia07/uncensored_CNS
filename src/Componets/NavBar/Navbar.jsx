@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { metaMaskSvg, polygonSvg } from "../../assests/indexImg";
-
+import { polygonSvg } from "../../assests/indexImg";
+import { BsPersonCheck } from "react-icons/bs";
 
 const Navbar = () => {
   const [isMenuOpend, setisMenuOpend] = useState(false);
@@ -48,10 +48,10 @@ const Navbar = () => {
           </ul>
           <button
             type="button"
-            className="text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center ml-5 "
+            className="text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center ml-5 gap-2"
           >
-            <img src={metaMaskSvg} alt="metaMask" className="h-6 w-6 mr-1" />
-            <span>Connect with MetaMask</span>
+            <BsPersonCheck />
+            <span>Login</span>
           </button>
 
           {isMenuOpend ? (
