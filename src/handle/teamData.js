@@ -23,7 +23,7 @@ const teamData = [
     },
     {
         name: "Chandraprakash Darji",
-        role: "ui",
+        role: "Front-end Dev",
         data: "",
         social: {
             insta: "https://instagram.com/chandraprakash_7852?igshid=YmMyMTA2M2Y=",
@@ -43,5 +43,7 @@ const teamData = [
             twitter: "https://twitter.com/manan_dharia?t=AttArJdLNOrF_4RNJv2ZwA&s=08"
         }
     },
-    
+
 ]
+
+export default teamData

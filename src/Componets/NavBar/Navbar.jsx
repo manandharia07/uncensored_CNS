@@ -1,11 +1,25 @@
 import React, { useState } from "react";
-import { metaMaskSvg, polygonSvg } from "../../assests/indexImg";
+import { polygonSvg } from "../../assests/indexImg";
+import { BsPersonCheck } from "react-icons/bs";
+import { useAuth0 } from "@auth0/auth0-react";
+
 const Navbar = () => {
   const [isMenuOpend, setisMenuOpend] = useState(false);
+  const [isLoggedIN, setIsLoggedIN] = useState(false);
   const navOptions = ["Github", "About Us", "Donate"];
+  const { user, isAuthenticated, isLoading, loginWithRedirect, logout } =
+    useAuth0();
 
   const handleMenuOpened = () => {
-    setisMenuOpend((prevState) => setisMenuOpend(!prevState));
+    setisMenuOpend((prevState) => {
+      setisMenuOpend(!prevState);
+    });
+  };
+  const handleLoginLogout = () => {
+    isLoggedIN === false ? loginWithRedirect() : logout();
+    setIsLoggedIN((prevState) => {
+      setIsLoggedIN(!prevState);
+    });
   };
 
   return (
@@ -46,10 +60,19 @@ const Navbar = () => {
           </ul>
           <button
             type="button"
-            className="text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center ml-5 "
+            className="text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center ml-5 gap-2"
+            onClick={handleLoginLogout}
           >
-            <img src={metaMaskSvg} alt="metaMask" className="h-6 w-6 mr-1" />
-            <span>Connect with MetaMask</span>
+            {isAuthenticated ? (
+              <img
+                src={user.picture}
+                alt={user.name}
+                className="w-7 rounded-full"
+              />
+            ) : (
+              <BsPersonCheck />
+            )}
+            <span>{isAuthenticated ? user.name : "Login"}</span>
           </button>
 
           {isMenuOpend ? (
